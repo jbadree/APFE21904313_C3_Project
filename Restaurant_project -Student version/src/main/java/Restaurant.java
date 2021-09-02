@@ -18,14 +18,16 @@ public class Restaurant {
     }
 
     public boolean isRestaurantOpen() {
-        return true;
-        //DELETE ABOVE STATEMENT AND WRITE CODE HERE
+        return getCurrentTime().isAfter(this.openingTime) &&
+                getCurrentTime().isBefore(this.closingTime);
     }
 
-    public LocalTime getCurrentTime(){ return  LocalTime.now(); }
+    public LocalTime getCurrentTime(){
+        return  LocalTime.now(); }
 
     public List<Item> getMenu() {
-        return null;
+        List<Item> menu = this.menu;
+        return menu;
         //DELETE ABOVE RETURN STATEMENT AND WRITE CODE HERE
     }
 
