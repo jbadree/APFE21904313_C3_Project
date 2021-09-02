@@ -8,8 +8,10 @@ public class Item {
     }
 
     public String getName() {
+
         return name;
     }
+
     @Override
     public String toString(){
         return  name + ":"
@@ -17,5 +19,6 @@ public class Item {
                 + "\n"
                 ;
     }
+
 
 }
